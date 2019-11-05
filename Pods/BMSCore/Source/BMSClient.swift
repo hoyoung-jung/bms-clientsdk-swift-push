@@ -32,6 +32,12 @@ public class BMSClient {
     */
     public struct Region {
         
+        /**
+           The Kaiser Dedication Region for United States Bluemix region.
+
+           - note: Use this in the `BMSClient.initialize(bluemixAppRoute:bluemixAppGUID:bluemixRegion:)` method.
+        */
+        public static let usWest = ".kpsj001.us-west.bluemix.net"
         
         /**
             The southern United States Bluemix region.
@@ -161,6 +167,12 @@ public class BMSClient {
     */
     public struct Region {
     
+        /**
+             The southern United States Bluemix region.
+             
+             - note: Use this in the `BMSClient.initialize(bluemixAppRoute:bluemixAppGUID:bluemixRegion:)` method.
+         */
+        public static let usWest = ".kpsj001.us-west.bluemix.net"
     
         /**
              The southern United States Bluemix region.

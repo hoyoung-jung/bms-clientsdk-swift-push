@@ -34,7 +34,7 @@ class testBMSPushClient: XCTestCase {
         
         #if swift(>=3.0)
             
-            BMSClient.sharedInstance.initialize(bluemixRegion:BMSClient.Region.usSouth)
+            BMSClient.sharedInstance.initialize(bluemixRegion:BMSClient.Region.usWest)
             let clientInstance = BMSPushClient.sharedInstance
             clientInstance.initializeWithAppGUID(appGUID: "fcaa8800-1b09-4ff2-85e1-8d7ea05211ec", clientSecret: "42cb3620-9f2e-4f72-a528-565dbbc55297")
             let string = "46f5b4fde98a7013ebeb189a3be65e585fc7eccd310af99359c7c6b67"
@@ -73,7 +73,7 @@ class testBMSPushClient: XCTestCase {
             }
         #else
             
-            BMSClient.sharedInstance.initialize(bluemixRegion: BMSClient.Region.usSouth)
+            BMSClient.sharedInstance.initialize(bluemixRegion: BMSClient.Region.usWest)
             
             let clientInstance = BMSPushClient.sharedInstance
             clientInstance.initializeWithAppGUID(appGUID: "fcaa8800-1b09-4ff2-85e1-8d7ea05211ec", clientSecret: "42cb3620-9f2e-4f72-a528-565dbbc55297")
@@ -232,9 +232,9 @@ class testBMSPushClient: XCTestCase {
         
         // MARK: retrieve subscibed tags
         #if swift(>=3.0)
-            BMSClient.sharedInstance.initialize(bluemixRegion: BMSClient.Region.usSouth)
+            BMSClient.sharedInstance.initialize(bluemixRegion: BMSClient.Region.usWest)
         #else
-            BMSClient.sharedInstance.initialize(bluemixRegion:  BMSClient.Region.usSouth)
+            BMSClient.sharedInstance.initialize(bluemixRegion:  BMSClient.Region.usWest)
         #endif
         let clientInstance = BMSPushClient.sharedInstance
         
@@ -373,9 +373,9 @@ class testBMSPushClient: XCTestCase {
     
     func testRegisterWithUserId(){
         #if swift(>=3.0)
-            BMSClient.sharedInstance.initialize(bluemixRegion: BMSClient.Region.usSouth)
+            BMSClient.sharedInstance.initialize(bluemixRegion: BMSClient.Region.usWest)
         #else
-            BMSClient.sharedInstance.initialize(bluemixRegion:  BMSClient.Region.usSouth)
+            BMSClient.sharedInstance.initialize(bluemixRegion:  BMSClient.Region.usWest)
         #endif
         
         let clientInstance = BMSPushClient.sharedInstance

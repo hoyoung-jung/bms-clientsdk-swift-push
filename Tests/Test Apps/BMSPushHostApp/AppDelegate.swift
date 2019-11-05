@@ -58,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BMSPushObserver {
         func registerForPush () {
             
             let myBMSClient = BMSClient.sharedInstance
-            myBMSClient.initialize(bluemixRegion: BMSClient.Region.usSouth)
+            myBMSClient.initialize(bluemixRegion: BMSClient.Region.usWest)
             
             let push =  BMSPushClient.sharedInstance
             push.delegate = self
@@ -312,7 +312,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BMSPushObserver {
         func registerForPush () {
             
             let myBMSClient = BMSClient.sharedInstance
-            myBMSClient.initialize(bluemixRegion: BMSClient.Region.usSouth)
+            myBMSClient.initialize(bluemixRegion: BMSClient.Region.usWest)
     
             let push =  BMSPushClient.sharedInstance
             push.delegate = self
